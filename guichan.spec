@@ -26,7 +26,7 @@ objects for displaying graphics and grabbing user input.
 
 %description -l pl
 Guichan to ma³a, wydajna biblioteka GUI w C++ przeznaczona do gier.
-Zawiera standardowy zestaw widgetów i mo¿e u¿ywaæ kilku ró¿nych
+Zawiera standardowy zestaw widgetów, mo¿e u¿ywaæ kilku ró¿nych
 obiektów do wy¶wietlania grafiki i pobierania wej¶cia od u¿ytkownika.
 
 %package devel
