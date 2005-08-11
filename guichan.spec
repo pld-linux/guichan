@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with  	allegro     # with allegro support (doesn't build)
+%bcond_with	allegro     # with allegro support (doesn't build)
 #
 Summary:	Guichan - small, efficient C++ GUI library designed for games
 Summary(pl):	Guichan - ma³a, wydajna biblioteka GUI w C++ przeznaczona do gier
