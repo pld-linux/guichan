@@ -13,8 +13,8 @@ Source0:	http://dl.sourceforge.net/guichan/%{name}-%{version}-src.tar.gz
 # Source0-md5:	f68b6c603c4fb3d70a8737f916214a35
 URL:		http://guichan.sourceforge.net/
 BuildRequires:	OpenGL-devel
-BuildRequires:	SDL_image-devel
 BuildRequires:	SDL-devel
+BuildRequires:	SDL_image-devel
 %{?with_allegro:BuildRequires:      allegro-devel}
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
