@@ -11,6 +11,7 @@ License:	BSD
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/guichan/%{name}-%{version}-src.tar.gz
 # Source0-md5:	f68b6c603c4fb3d70a8737f916214a35
+Patch0:		%{name}-configure.patch
 URL:		http://guichan.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
@@ -56,6 +57,8 @@ Statyczne wersje bibliotek Guichan.
 
 %prep
 %setup -q
+
+%patch0 -p1
 
 %build
 %configure \
