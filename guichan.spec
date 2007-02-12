@@ -3,7 +3,7 @@
 %bcond_with	allegro     # with allegro support (doesn't build)
 #
 Summary:	Guichan - small, efficient C++ GUI library designed for games
-Summary(pl):	Guichan - ma≥a, wydajna biblioteka GUI w C++ przeznaczona do gier
+Summary(pl.UTF-8):   Guichan - ma≈Ça, wydajna biblioteka GUI w C++ przeznaczona do gier
 Name:		guichan
 Version:	0.6.1
 Release:	1
@@ -26,14 +26,14 @@ Guichan is a small, efficient C++ GUI library designed for games. It
 comes with a standard set of widgets and can use several different
 objects for displaying graphics and grabbing user input.
 
-%description -l pl
-Guichan to ma≥a, wydajna biblioteka GUI w C++ przeznaczona do gier.
-Zawiera standardowy zestaw widgetÛw, moøe uøywaÊ kilku rÛønych
-obiektÛw do wy∂wietlania grafiki i pobierania wej∂cia od uøytkownika.
+%description -l pl.UTF-8
+Guichan to ma≈Ça, wydajna biblioteka GUI w C++ przeznaczona do gier.
+Zawiera standardowy zestaw widget√≥w, mo≈ºe u≈ºywaƒá kilku r√≥≈ºnych
+obiekt√≥w do wy≈õwietlania grafiki i pobierania wej≈õcia od u≈ºytkownika.
 
 %package devel
 Summary:	Header files for Guichan library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki Guichan
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki Guichan
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -41,19 +41,19 @@ Requires:	libstdc++-devel
 %description devel
 Header files for Guichan library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki Guichan.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki Guichan.
 
 %package static
 Summary:	Static version of Guichan libraries
-Summary(pl):	Statyczne wersje bibliotek Guichan
+Summary(pl.UTF-8):   Statyczne wersje bibliotek Guichan
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of Guichan libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczne wersje bibliotek Guichan.
 
 %prep
