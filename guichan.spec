@@ -3,7 +3,7 @@
 %bcond_with	allegro     # with allegro support (doesn't build)
 #
 Summary:	Guichan - small, efficient C++ GUI library designed for games
-Summary(pl.UTF-8):   Guichan - mała, wydajna biblioteka GUI w C++ przeznaczona do gier
+Summary(pl.UTF-8):	Guichan - mała, wydajna biblioteka GUI w C++ przeznaczona do gier
 Name:		guichan
 Version:	0.6.1
 Release:	1
@@ -33,7 +33,7 @@ obiektów do wyświetlania grafiki i pobierania wejścia od użytkownika.
 
 %package devel
 Summary:	Header files for Guichan library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki Guichan
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki Guichan
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -46,7 +46,7 @@ Pliki nagłówkowe biblioteki Guichan.
 
 %package static
 Summary:	Static version of Guichan libraries
-Summary(pl.UTF-8):   Statyczne wersje bibliotek Guichan
+Summary(pl.UTF-8):	Statyczne wersje bibliotek Guichan
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
