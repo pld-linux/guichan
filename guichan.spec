@@ -5,12 +5,12 @@
 Summary:	Guichan - small, efficient C++ GUI library designed for games
 Summary(pl.UTF-8):	Guichan - mała, wydajna biblioteka GUI w C++ przeznaczona do gier
 Name:		guichan
-Version:	0.7.1
+Version:	0.8.0
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://guichan.googlecode.com/files/%{name}-%{version}.tar.gz
-# Source0-md5:	275c5bad231d2ce55e654d80cb1e05be
+# Source0-md5:	29a03f05645b669fdc98ec2db5de13f5
 URL:		http://guichan.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
