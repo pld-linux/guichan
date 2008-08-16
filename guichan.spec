@@ -19,6 +19,7 @@ BuildRequires:	SDL_image-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -60,6 +61,7 @@ Statyczne wersje bibliotek Guichan.
 %setup -q
 
 %build
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
