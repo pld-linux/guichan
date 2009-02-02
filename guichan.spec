@@ -1,4 +1,6 @@
 #
+# TODO: - undefined references
+#
 # Conditional build:
 %bcond_without	allegro     # without allegro support
 #
