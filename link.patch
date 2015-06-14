@@ -1,0 +1,33 @@
+--- guichan-0.8.2/src/sdl/Makefile.am.orig	2009-09-03 22:35:02.000000000 +0200
++++ guichan-0.8.2/src/sdl/Makefile.am	2015-06-14 19:55:26.245067135 +0200
+@@ -6,6 +6,8 @@
+ 
+ libguichan_sdl_la_LDFLAGS = -no-undefined -release $(LT_RELEASE) -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
+ 
++libguichan_sdl_la_LIBADD = -lSDL -lSDL_image
++
+ libguichan_sdl_la_SOURCES =	\
+ 	sdl.cpp			\
+ 	sdlgraphics.cpp		\
+--- guichan-0.8.2/src/opengl/Makefile.am.orig	2015-06-14 19:55:58.650327720 +0200
++++ guichan-0.8.2/src/opengl/Makefile.am	2015-06-14 19:57:17.981358433 +0200
+@@ -4,6 +4,8 @@
+ 
+ libguichan_opengl_la_LDFLAGS = -no-undefined -release $(LT_RELEASE) -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) 
+ 
++libguichan_opengl_la_LIBADD = -lGL
++
+ libguichan_opengl_la_SOURCES =	\
+ 	opengl.cpp		\
+ 	openglimage.cpp		\
+--- guichan-0.8.2/src/allegro/Makefile.am~	2009-09-03 22:35:02.000000000 +0200
++++ guichan-0.8.2/src/allegro/Makefile.am	2015-06-14 20:09:44.940816861 +0200
+@@ -4,6 +4,8 @@
+ 
+ libguichan_allegro_la_LDFLAGS = -no-undefined -release $(LT_RELEASE) -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
+ 
++libguichan_allegro_la_LIBADD = -lalleg
++
+ libguichan_allegro_la_SOURCES =		\
+ 		allegro.cpp		\
+ 		allegrofont.cpp		\
