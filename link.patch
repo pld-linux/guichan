@@ -4,7 +4,7 @@
  
  libguichan_sdl_la_LDFLAGS = -no-undefined -release $(LT_RELEASE) -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
  
-+libguichan_sdl_la_LIBADD = -lSDL -lSDL_image
++libguichan_sdl_la_LIBADD = $(top_builddir)/src/libguichan.la -lSDL -lSDL_image
 +
  libguichan_sdl_la_SOURCES =	\
  	sdl.cpp			\
@@ -15,7 +15,7 @@
  
  libguichan_opengl_la_LDFLAGS = -no-undefined -release $(LT_RELEASE) -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) 
  
-+libguichan_opengl_la_LIBADD = -lGL
++libguichan_opengl_la_LIBADD = $(top_builddir)/src/libguichan.la -lGL
 +
  libguichan_opengl_la_SOURCES =	\
  	opengl.cpp		\
@@ -26,8 +26,16 @@
  
  libguichan_allegro_la_LDFLAGS = -no-undefined -release $(LT_RELEASE) -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
  
-+libguichan_allegro_la_LIBADD = -lalleg
++libguichan_allegro_la_LIBADD = $(top_builddir)/src/libguichan.la -lalleg
 +
  libguichan_allegro_la_SOURCES =		\
  		allegro.cpp		\
  		allegrofont.cpp		\
+--- guichan-0.8.2/src/Makefile.am.orig	2009-09-03 22:35:02.000000000 +0200
++++ guichan-0.8.2/src/Makefile.am	2017-07-14 16:06:00.672219356 +0200
+@@ -1,4 +1,4 @@
+-SUBDIRS = widgets @GUICHAN_EXTRADIRS@ hge openlayer contrib
++SUBDIRS = widgets . @GUICHAN_EXTRADIRS@ hge openlayer contrib
+ 
+ INCLUDES = -I$(top_srcdir)/include
+ 

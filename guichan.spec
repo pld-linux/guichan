@@ -1,3 +1,4 @@
+#
 # Conditional build:
 %bcond_without	allegro     # without allegro support
 #
@@ -8,6 +9,7 @@ Version:	0.8.2
 Release:	3
 License:	BSD
 Group:		Libraries
+# NOTE: now sources available at https://gitorious.org/guichan/mainline
 Source0:	http://guichan.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	af535d7f387e774e3197cef8023ea105
 Patch0:		link.patch
@@ -16,15 +18,12 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 %{?with_allegro:BuildRequires:      allegro-devel}
-BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	autoconf >= 2.57
+BuildRequires:	automake >= 1.4
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:1.5
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-# use symbold from libguichan.so (fixing would cause link loop)
-%define		skip_post_check_so	libguichan_.*.so.*
 
 %description
 Guichan is a small, efficient C++ GUI library designed for games. It
