@@ -9,7 +9,7 @@ Version:	0.8.2
 Release:	4
 License:	BSD
 Group:		Libraries
-# NOTE: now sources available at https://gitorious.org/guichan/mainline
+# NOTE: now sources available at https://github.com/wheybags/guichan
 Source0:	http://guichan.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	af535d7f387e774e3197cef8023ea105
 Patch0:		link.patch
